@@ -1,0 +1,9 @@
+{
+  "name": "MEAN_Store_app",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.2.0",
+    "mongoose": "latest"
+  }
+}

@@ -1,0 +1,23 @@
+<div>
+  <div>
+    <input type="text" placeholder="search..." /><br />
+    <button>Filter</button>
+    <div ng-repeat="product in products" id="pics">
+      <div>
+        <img src="{{ product.product }}" width="200px" />
+        <p>{{ product.name }}</p>
+      </div>
+    </div>
+  </div>
+    <a href="#/products">Show More</a>
+  <div ng-controller="ordersController" id="recent_orders" align="center">
+    <h4>Recent Orders</h4>
+      <li ng-repeat="order in orders">{{ order.name }} purchased {{order.quantity}} {{ order.product }}...({{ order.created_at | date: 'MMMM dd, yyyy'}})</li>
+    <a href="#/orders">Show All Orders</a>
+  </div>
+  <div ng-controller="customersController" align="center">
+    <h4>New Customers</h4>
+      <li ng-repeat="customer in customers">{{ customer.name }} joined the MEAN Store...({{ customer.created_at | date: 'MMMM dd, yyyy'}})</li>
+    <a href="#/customers">Show All Customers</a>
+  </div>
+</div>

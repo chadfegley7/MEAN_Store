@@ -1,0 +1,21 @@
+<div>
+  <div id="side_bar"><br />
+    <input type="text" placeholder="search..." /><br />
+    <button>Filter</button><br />
+    <h4>Add a New Product</h4>
+    <form>
+      Name:<br /> <input type="text" ng-model="new_product.name" placeholder="name..." /><br />
+      Image(url):<br /> <input type="text"  ng-model="new_product.product" placeholder="http://" /><br />
+      Description:<br /><textarea  ng-model="new_product.description" cols="15" rows="5"></textarea><br />
+      Init Quantity:<br /><input type="Number" ng-model="new_product.qty" />
+      <input type="submit"  value="Submit" ng-click="addProduct()"/>
+    </form>
+  </div>
+  <div ng-repeat="product in products" id="products">
+    <div>
+      <img src="{{ product.product }}" width="150px" />
+      <p>{{ product.name }}</p>
+      <p>{{ product.description }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+#pics{
+  height: 200px;
+  width: 200px;
+  position: relative;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+#products{
+  position: relative;
+  margin-left: 200px;
+  display: inline-block;
+}
+
+#side_bar{
+  position: relative;
+  height: 5px;
+  width: 200px;
+}
